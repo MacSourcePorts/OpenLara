@@ -1,0 +1,4 @@
+
+.DS_Store
+src/platform/osx/OpenLara.xcodeproj/project.xcworkspace/*
+src/platform/osx/OpenLara.xcodeproj/xcuserdata/tomkidd.xcuserdatad/xcschemes/xcschememanagement.plist

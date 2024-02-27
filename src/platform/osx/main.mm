@@ -523,10 +523,11 @@ int main() {
     [view setWantsBestResolutionOpenGLSurface:enableRetina];
     
     // get path to game content
-    NSBundle *bundle   = [NSBundle mainBundle];
-    NSURL *resourceURL = bundle.resourceURL;
-    [resourceURL getFileSystemRepresentation:contentDir maxLength:sizeof(contentDir)];
-    strcat(contentDir, "/");
+//    NSBundle *bundle   = [NSBundle mainBundle];
+//    NSURL *resourceURL = bundle.resourceURL;
+//    [resourceURL getFileSystemRepresentation:contentDir maxLength:sizeof(contentDir)];
+    [supportPath getCString:contentDir maxLength:sizeof(contentDir) encoding:NSUTF8StringEncoding];
+    strcat(contentDir, "/tr1/");
     
     [supportPath getCString:saveDir maxLength:sizeof(saveDir) encoding:NSUTF8StringEncoding];
     strcat(saveDir, "/");
